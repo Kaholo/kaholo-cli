@@ -6,13 +6,14 @@
 ### Installation
 
 ```bash
-clone https://github.com/Kaholo/kaholo-cli.git
+git clone git@github.com:Kaholo/kaholo-cli.git
 cd kaholo-cli
+npm i
 npm i -g
 kaholo --help
 ```
 
-For global install on Linux, you might need to run `sudo npm install --unsafe-perm -g`.
+For global install, you might need to run `sudo npm install --unsafe-perm -g`.
 
 ### Authentication
 
