@@ -21,6 +21,8 @@ For global install, you might need to run `sudo npm install --unsafe-perm -g`.
 kaholo login [--url <kaholo_url>] [--email <user_email>]
 ```
 
+example: `kaholo login --url http://localhost:3000 --email admin@kaholo.io`
+
 If not provided by the command, you will be asked to type in your kaholo environment url.
 
 You will be asked to choose between an authentication type: 
