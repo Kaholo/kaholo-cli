@@ -48,3 +48,6 @@ Path can be one of the following:
 * Source code directory - will zip it and upload the zip file.
 
 if no path specified, using current working directory.
+
+**Notice**: The plugin's code will not be loaded by the agent straight away. It's always a good idea to restart the agent(s)
+after the plugin is uploaded.
