@@ -51,3 +51,4 @@ if no path specified, using current working directory.
 
 **Notice**: The plugin's code will not be loaded by the agent straight away. It's always a good idea to restart the agent(s)
 after the plugin is uploaded.
+It might also be useful to restart the agent(s) if the plugin fails to upload.
