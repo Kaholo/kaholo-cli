@@ -6,19 +6,22 @@
 ### Installation
 
 ```bash
-clone https://github.com/Kaholo/kaholo-cli.git
+git clone git@github.com:Kaholo/kaholo-cli.git
 cd kaholo-cli
+npm i
 npm i -g
 kaholo --help
 ```
 
-For global install on Linux, you might need to run `sudo npm install --unsafe-perm -g`.
+For global install, you might need to run `sudo npm install --unsafe-perm -g`.
 
 ### Authentication
 
 ```bash
 kaholo login [--url <kaholo_url>] [--email <user_email>]
 ```
+
+example: `kaholo login --url http://localhost:3000 --email admin@kaholo.io`
 
 If not provided by the command, you will be asked to type in your kaholo environment url.
 
@@ -45,3 +48,7 @@ Path can be one of the following:
 * Source code directory - will zip it and upload the zip file.
 
 if no path specified, using current working directory.
+
+**Notice**: The plugin's code will not be loaded by the agent straight away. It's always a good idea to restart the agent(s)
+after the plugin is uploaded.
+It might also be useful to restart the agent(s) if the plugin fails to upload.
