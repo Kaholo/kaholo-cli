@@ -15,7 +15,23 @@
             "args": [
                 "login",
                 "--url",
-                "http://ci.develop.kaholo.io"
+                "http://ci.develop.kaholo.io",
+                "--profile",
+                "ci"
+            ],
+            "console": "integratedTerminal",
+            // "autoAttachChildProcesses": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Profile Switch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/index.js",
+            "args": [
+                "switch-profile"
             ],
             "console": "integratedTerminal",
             // "autoAttachChildProcesses": true
