@@ -18,10 +18,10 @@ For global install, you might need to run `sudo npm install --unsafe-perm -g`.
 ### Authentication
 
 ```bash
-kaholo login [--url <kaholo_url>] [--email <user_email>]
+kaholo login [--url <kaholo_url>] [--email <user_email>] [--profile <profile>]
 ```
 
-example: `kaholo login --url http://localhost:3000 --email admin@kaholo.io`
+example: `kaholo login --url http://localhost:3000 --email admin@kaholo.io --profile local`
 
 If not provided by the command, you will be asked to type in your kaholo environment url.
 
