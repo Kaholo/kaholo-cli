@@ -65,3 +65,19 @@ if no path specified, using current working directory.
 **Notice**: The plugin's code will not be loaded by the agent straight away. It's always a good idea to restart the agent(s)
 after the plugin is uploaded.
 It might also be useful to restart the agent(s) if the plugin fails to upload.
+
+#### Local Agent
+
+```bash
+kaholo local-agent [kaholo-url] [--port] [--agent-key] [--certs-path] [--clone-path]
+```
+
+This action allows you to create and connect an agent easily to any kaholo installation. The following steos are done:
+* Clones the agent from the public `Kaholo/kaholo-agent` repository. If `--clone-path` was supplied, instead of clonening the cli will do `git pull` in this directory instead. **Note:** This is supported from kaholo-agent v2.1.5 or above, do not try to use it with any older versions. 
+* installing the agent depenecies using `npm i --production`
+* Start an ngrok tunnel to proxy the communication. **Note:** Needed at the moment because the agent requires inbound communication from the kaholo platform.
+* Starts the agent
+
+
+**Notice**: 
+* The `--certs-path` should indicate to the directory having both `client_certificate.crt` and `client_key.pem`
