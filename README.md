@@ -3,6 +3,7 @@
 * [Authentication](#authentication)
 * [Actions](#actions)
   * [Plugin Upload](#plugin-upload)
+  * [Local Agent](#local-agent)
 ### Installation
 
 ```bash
