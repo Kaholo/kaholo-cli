@@ -25,6 +25,30 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Launch Local Agent",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/index.js",
+            "args": [
+                "local-agent",
+                "https://ops1.kaholo.net",
+                "--port",
+                "8093",
+                "--agent-key",
+                "test-agent-4",
+                "--certs-path",
+                "../saas-certs/",
+                "--clone-path" ,
+                "/Users/matankadosh/Desktop/repos/kaholo/kaholo-enterprise/twiddlebug"
+
+            ],
+            "console": "integratedTerminal",
+            // "autoAttachChildProcesses": true
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Launch Profile Switch",
             "skipFiles": [
                 "<node_internals>/**"
